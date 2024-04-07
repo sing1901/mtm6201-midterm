@@ -1,0 +1,696 @@
+/* Global Styles */
+/* Setting default styles for all pages */
+html {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+    margin: 0 auto
+}
+
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 34px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+p {
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+/* Creating skip links for accessibility */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #DB00A1;
+    color: black;
+    padding: 5px;
+    z-index: 1000;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Styling the global container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+/* Removing bullet points and underline from nav list */
+.nav ul {
+    list-style: none;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+/* Creating a hover and focus to identify which item them are on */
+.nav a:hover {
+    color: #DA0B0B;
+}
+
+.nav a:focus {
+    outline: 1px solid black;
+    background-color: #DB00A1;
+}
+
+/* Styling nav to the top of the page */
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav nav {
+    display: flex;
+}
+
+.nav nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav nav ul li {
+    margin-right: 40px;
+}
+
+/* Adjusting the margin to add space between the logo and the navigation */
+.nav img {
+    margin-right: 180px;
+    margin-left: 20px;
+}
+
+/* Styling Sign In & Sign Up buttons */
+/* Adding  hover and focus to identify which item them are on */
+.si-button {
+    background-color: transparent;
+    border: none;
+    color: black;
+}
+
+.su-button {
+    background-color: transparent;
+    border: 2px solid #DA0B0B;
+    border-radius: 20px;
+    padding: 5px 20px;
+    color: #DA0B0B;
+}
+
+.si-button:hover {
+    color: #DA0B0B;
+}
+
+.si-button:focus {
+    outline: 1px solid black;
+    background-color: #DB00A1;
+}
+
+.su-button:hover {
+    background-color: #DA0B0B;
+    color: #FFF;
+}
+
+.su-button:focus {
+    outline: 1px solid black;
+    color: black;
+    background-color: #DB00A1;
+}
+
+/* Adding an animation on the logo to show that it is clickable */
+.home-button {
+    transition: transform 0.3s ease;
+}
+
+.home-button:hover {
+    transform: scale(1.3);
+}
+
+/* Styling banner */
+.banner {
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.banner img {
+    flex: 1;
+    max-width: 100%;
+}
+
+.banner-content {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.banner p {
+    padding-top: 10px;
+}
+
+.banner button {
+    margin-top: 20px;
+}
+
+.gs-button {
+    background-color: #DA0B0B;
+    border: 2px solid #DA0B0B;
+    border-radius: 10px;
+    padding: 10px 40px;
+    color: #FFF;
+    box-shadow: 0 5px 15px #DA0B0B;
+}
+
+/* Adding a hover and focus to identify which item them are on */
+.gs-button:hover {
+    background-color: #FFF;
+    color: #DA0B0B;
+}
+
+.gs-button:focus {
+    outline: 1px solid black;
+    background-color: #DB00A1;
+    color: black;
+}
+
+/* Putting icons in one row using flex */
+.uls-icons {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #FFF;
+    box-shadow: 0 5px 10px #c1c1c1;
+    border-radius: 10px;
+}
+
+.uls-icons div {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+}
+
+.uls-icons img {
+    width: 50px;
+    height: auto;
+    margin-right: 2%;
+    margin-left: 8%;
+}
+
+/* Styling Features Div */
+.features {
+    display: flex;
+    align-items: center;
+    margin: 4%;
+    background-color: #f4f4f4;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.features img {
+    max-width: 100%;
+    margin-right: 4%;
+}
+
+.features-content {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.features p {
+    padding-top: 10px;
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.features ul li img {
+    margin-right: 10px;
+}
+
+/* Styling Choose your plan section */
+.plans {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.plan-info {
+    margin-bottom: 20px;
+}
+
+.plan-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.plan-card {
+    width: fit-content;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.plan-card:hover {
+    border: 2px solid #DA0B0B;
+}
+
+
+.plan-card p {
+    margin-top: auto;
+    font-weight: bold;
+}
+
+.plan-cards ul li {
+    list-style: none;
+    text-align: justify;
+}
+
+.select-button {
+    background-color: transparent;
+    border: 2px solid #DA0B0B;
+    border-radius: 20px;
+    padding: 5px 20px;
+    color: #DA0B0B;
+}
+
+/* Adding a hover and focus to identify which item them are on */
+.select-button:hover {
+    color: #FFF;
+    background-color: #DA0B0B;
+}
+
+.select-button:focus {
+    outline: 1px solid black;
+    color: black;
+    background-color: #DB00A1;
+}
+
+/* styling network section */
+.network {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.network h2,
+.network p {
+    margin-bottom: 20px;
+}
+
+.network img {
+    margin-top: 40px;
+}
+
+/* Styling Testimonials */
+.testimonial-heading {
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 50px;
+}
+
+.testimonial-card h5 {
+    font-weight: lighter;
+}
+
+.testimonial-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.testimonial-card {
+    width: 500px;
+    padding-bottom: 100px;
+}
+
+.testimonial-card img .profile {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.testimonial-card .card-content {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    height: 200px;
+}
+
+.testimonial-card .card-content:hover {
+    border: 1px solid #DA0B0B;
+}
+
+.testimonial-card h4,
+.testimonial-card h5 {
+    margin: 0;
+}
+
+.testimonial-card .testimonial-info p {
+    margin-top: 10px;
+}
+
+/* Subscribe Section Stylling */
+.subscribe {
+    max-width: 1000px;
+    margin-left: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    gap: 10px;
+}
+
+.subscribe {
+    background-color: #FFF;
+    box-shadow: 0 10px 10px #c1c1c1;
+    border-radius: 10px;
+}
+
+.subscribe p {
+    grid-column: 1;
+    margin-bottom: 50px;
+}
+
+.subscribe h3 {
+    margin-top: 50px;
+}
+
+.sub-button {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+    margin-top: 100px;
+}
+
+.sub-button {
+    background-color: #DA0B0B;
+    color: #FFF;
+    border: 2px solid #DA0B0B;
+    border-radius: 10px;
+    padding: 10px 40px;
+    width: auto;
+    height: 40px;
+}
+
+/* Adding a hover and focus to identify which item them are on */
+.sub-button:hover {
+    color: #DA0B0B;
+    background-color: #FFF;
+}
+
+.sub-button:focus {
+    outline: 1px solid black;
+    background-color: #DB00A1;
+    color: black;
+}
+
+/* Footer Styling */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    margin: 5px auto;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+.footer p,
+.footer ul {
+    font-size: 14px;
+}
+
+.footer img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links h3 {
+    margin-bottom: 10px;
+}
+
+/* about.html styles */
+.about-container {
+    margin: 100px;
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-container img {
+    flex: 1;
+    max-width: 35%;
+    border-radius: 5px;
+    padding-right: 20px;
+}
+
+.about {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.about-container p {
+    padding-top: 10px;
+}
+
+/* features.html styles */
+.featureslist {
+    margin: 100px;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #c1c1c1
+}
+
+dl {
+    margin-top: 30px;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+dd {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.featureslist img {
+    max-width: 50%;
+    border-radius: 5px;
+    padding-left: 25%;
+}
+
+/* Animation for banner content */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.banner-content {
+    flex: 1;
+    padding: 0 20px;
+    animation: fadeIn 1s ease forwards;
+}
+
+/* Animation for network images */
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.network img {
+    margin-top: 40px;
+    animation: slideUp 1s ease forwards;
+}
+
+
+/* Creaint a media querie to make the website respsonive to smaller screens */
+@media only screen and (max-width: 768px) {
+
+    /* Adjusting global font sizes */
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    h5 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    /* Adjusting margins */
+    .container {
+        padding: 0.5em;
+    }
+
+    /* Adjusting nav */
+    .nav img {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav ul li {
+        margin: 10px 0;
+    }
+
+    .nav nav ul li {
+        margin-right: 0;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Adjusting banner */
+    .banner {
+        flex-direction: column;
+        padding: 50px 0;
+    }
+
+    .banner img {
+        max-width: 80%;
+    }
+
+    .banner-content {
+        padding: 20px;
+    }
+
+    /* Adjusting network images */
+    .network img {
+        max-width: 100%;
+    }
+
+    /* Adjusting features */
+    .features {
+        flex-direction: column;
+    }
+
+    .features img {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+
+    /* Adjusting plan cards */
+    .plan-card {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    /* Adjusting testimonial section */
+    .testimonial-card .card-content {
+        padding: 20px;
+        background-color: #f4f4f4;
+        border-radius: 10px;
+        height: 300px;
+    }
+
+    /* Adjusting subscribe section */
+    .subscribe {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+    }
+
+    .sub-button {
+        grid-column: 1;
+        grid-row: 3;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    /* Adjusting footer */
+    .footer {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    /* about.html styles */
+    .about-container {
+        margin: 50px;
+    }
+}

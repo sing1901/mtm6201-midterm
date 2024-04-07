@@ -1,0 +1,667 @@
+/* SKIP LINKS STYLES section */
+.skkip-thelinks{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.skkip-thelinks a{
+  position: absolute;
+  top: -3em;
+  background-color: black;
+  color:white;
+  padding: .5em 1em;
+  font-weight: bold;
+}
+.skkip-thelinks a:focus{
+  top: 0;
+}
+
+/* GLOBAL STYLES section */
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: normal;
+}
+
+h3 {
+  font-size: 2.25rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+/* HEADER STYLES section */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+/* the Logo */
+header a img {
+  height: 30px; 
+}
+
+/* the Default styles for navigation */
+#main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+#main-nav li {
+  margin-right: 20px;
+}
+
+#main-nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+#main-nav ul li a:hover,
+#main-nav ul li a:focus,
+#main-nav ul li a.active {
+  color: #FA4A0C;
+}
+
+/* the HERO STYLES */
+
+.hero {
+    text-align: center;
+    padding: 10px;
+}
+
+.hero strong {
+    font-size: 1rem;
+    color: #737373;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    margin: 20px 0;
+    color: #737373;
+}
+
+/* ANIMATION 01 */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.hero {
+  animation: fadeIn 1s ease-out;
+}
+
+/* style for APP STORE BUTTONS  */
+.app-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 0;
+}
+
+.playstore, .appstore {
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin: 0 1rem;
+    border-radius: 30px;
+    background-color: #FA4A0C;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.appstore {
+    background-color: transparent;
+    color: #FA4A0C;
+    border: 1px solid #FA4A0C;    
+}
+
+/* the  Hover effects made  for the  buttons*/
+.playstore:hover {
+    background-color: #b32c2c;
+  }
+
+.appstore:hover {
+  background-color: #b32c2c;
+}
+
+/* two  phones mockup styles */
+.mockup img {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  top: -3em;
+}
+
+/* HOW THE APP WORKs,  STYLES */
+.how-app-works h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: rgb(37, 43, 66);
+  padding: 1rem;
+    font-weight: 600;
+}
+
+
+/* HR STYLES */
+.line-above {
+  width: 100%; 
+  border: 1px solid rgb(228, 228, 228);
+  margin: 0 auto;
+}
+
+/* displaying the line below on the  mobile */
+.line-below {
+  display: none;
+  width: 884px;
+  border: 1px solid rgb(228, 228, 228);
+  margin: 0 auto; 
+}
+
+
+/*  STYLES for the steps */
+.steps {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.steps h3 {
+  color: #FA4A0C; 
+  margin-bottom: 20px;
+  margin-top: 30px; 
+  font-size: 1.5rem; 
+  font-weight: 600;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.steps h2 {
+  color: #252B42;
+  margin-bottom: 25px; 
+  font-size: 2.5rem; 
+  font-weight: bold;
+  padding-left: 30px;
+  padding-right: 30px;
+  line-height: 1.2;
+}
+
+.steps p {
+  font-size: 1.5rem;
+  padding: 0 40px; 
+  margin-left: 30px;
+  margin-right: 30px;
+  color: #737373;
+  line-height: 1.2;
+  margin-top: 35px;
+}
+
+.steps img {
+  width: 100%; 
+}
+
+
+/* the second animation  */
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.steps {
+  animation: slideUp 0.5s ease-out forwards;
+  opacity: 0; 
+}
+
+.steps:nth-child(1) { animation-delay: 0.3s; }
+.steps:nth-child(2) { animation-delay: 0.6s; }
+.steps:nth-child(3) { animation-delay: 0.9s; }
+
+
+/* styles for downloading the application */
+/* section for the mobilee  with color*/
+.download-app {
+  background-color: #252B42;
+  color: #fff;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.download-app h2 {
+  margin-bottom: 1.2rem; 
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.download-app p {
+  margin-bottom: 2.5rem;
+  color: #BDBDBD;
+  line-height: 1.5;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/* BUTTONS DOWLOAD STYLES */
+.buy-now, .try-for-free {
+  background-color: #FA4A0C; 
+  border: none;
+  color: white;
+  padding: 20px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0px 16px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.buy-now {
+  background-color: #fa4a0c;
+  color: #fff;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.try-for-free {
+  background-color: transparent; 
+  color: #fff; 
+  border: 2px solid #fff;
+  margin-bottom: 40px
+}
+
+/* Hover effects for the  buttons*/
+.try-for-free:hover {
+  background-color: #b32c2c;
+}
+
+.try-for-free.appstore:hover {
+background-color: #b32c2c;
+}
+
+/* frequently asked questions  STYLES */
+.faq {
+  padding-left: 20px; 
+  padding-right: 20px; 
+  max-width: 800px; 
+  margin: auto; 
+} 
+summary {
+  font-weight: bold;
+  cursor: pointer;
+  padding: .5em 1.3rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;  
+  transition: height 1s ease;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:after{
+  content: "\002B";
+}
+
+details[open] summary {
+    border-bottom: 1px solid #FA4A0C;
+    margin-bottom: 1rem;
+    border-radius: 5px
+}
+
+details[open] summary:after{
+  content: "\00D7";
+  color: #BDBDBD;
+}
+
+details[open] div{
+  padding: .5em 1em;
+}
+
+/* STYLES for the contact page  */
+.contactFormLabel{
+  font-family: 'Poppins', sans-serif;
+}
+.contact-section {
+  max-width: 600px; 
+  margin: 0 auto; 
+  padding: 2rem; 
+  text-align: center; 
+}
+
+.contact-section h2 {
+  margin-bottom: 1rem; 
+  font-size: 2rem;
+}
+
+.contact-section form {
+  display: grid;
+  gap: 1rem; 
+}
+
+.contact-section label {
+  text-align: left; 
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contact-section input,
+.contact-section textarea {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%; 
+  padding: 0.5rem; 
+  margin-top: 0.5rem;
+  border: 1px solid #fa4a0c; 
+  border-radius: 4px; 
+}
+
+.contact-section button {
+  background-color: #FA4A0C; 
+  border: none;
+  color: white;
+  padding: 20px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0px 16px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.contact-section button:hover {
+  background-color: #b32c2c;
+}
+
+/* STYLES for teh footer */
+footer {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.footer-logo img {
+  max-width: 100px; 
+  margin-bottom: 1rem;
+}
+
+.footer-socialmedia a img {
+  width: 40px; 
+  height: 40px;
+  margin: 0.5rem;
+}
+
+.footer-socialmedia {
+  margin-bottom: 10px;
+}
+
+.footer-copyright p {
+  font-size: .7rem; 
+  margin-bottom: 1.5rem;
+}
+
+/* styles for the desktop  */
+
+/* Larger screens (desktops) */
+@media (min-width: 768px) { 
+  
+  /* STYLES for the header  */
+  header a img {
+    height: 100px; 
+  }
+  
+  #main-nav ul {
+    justify-content: flex-end; 
+  }
+  
+  #main-nav li {
+    margin-right: 50px; 
+    font-size: 16px;
+  }
+
+  /* STYLES for the hero section */
+  .hero {
+    background-image: url("../images/background_food_image.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    padding: 6rem;
+    background-position: center;
+  }
+
+  .hero strong,
+  .hero p {
+    width: 50%;
+    color: #F6F6F6;
+  }
+
+  .hero h1{
+    max-width: 580px;
+    color: #FFFFFF;
+  }
+
+  .hero p {
+    padding-bottom: 30px;
+  }
+
+  /* styles for the app store butoons */
+  .app-links {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .playstore, .appstore {
+    margin: 0 20px; 
+    padding: 1.2rem 3rem; 
+    font-size: 1.2rem;
+  }
+
+  .appstore {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+  }
+
+  /* styles for the mock up images */
+  .mockup img {
+    position: relative;
+    top: -15em;
+    width: 548px;
+  }
+
+  .mockup {
+    height: 800px;
+    text-align: center;
+  }
+
+ /* STYLES for how the app works */
+ .line-above {
+  width: 884px;
+}
+
+.line-below {
+  display: none;
+}
+
+.how-app-works {
+margin-top: 40px;
+}
+
+.how-app-works h2{
+font-size: 44px;
+}
+
+.steps, .steps h2 {
+display: flex;
+align-items: center;
+margin-bottom: 25px;
+text-align: left;
+}
+
+.steps .text-step {
+flex: 1;
+}
+
+.steps .text-step, .steps img { 
+margin-left: 4em;
+margin-right: 4em;
+}
+
+.steps img {
+width: auto;
+height: auto;
+max-width: 100%;
+}
+
+.steps p {
+padding: 0;
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  margin-bottom: 10px;
+  padding: 0 15px;
+}
+
+.steps h3, .steps h2, .steps p {
+  padding: 0;
+  margin: 0;
+}
+
+.steps h3 {
+  color: #FA4A0C;
+  margin-top: 30px; 
+  font-size: 1.5rem; 
+  font-weight: 600;
+}
+
+.steps h2 {
+  color: #252B42;
+  margin-top: 20px;
+  font-size: 2.5rem; 
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.steps p {
+  font-size: 1.5rem;
+  color: #737373;
+  line-height: 1.2;
+  margin-top: 35px;
+}
+
+.steps img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.steps:nth-of-type(1) img  {
+  order: 1;
+}
+
+.steps:nth-of-type(1) .text-step  {
+  order: 2;
+}
+
+.steps:nth-of-type(2) img  {
+  order: 2;
+}
+
+.steps:nth-of-type(2) .text-step  {
+  order: 1;
+}
+
+.steps:nth-of-type(3) img  {
+  order: 1;
+}
+
+.steps:nth-of-type(3) .text-step  {
+  order: 2;
+}
+
+/*  STYLES for the how to download the app section  */
+.download-app {
+  background-image: url('../images/download_image.png');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+.download-app p {
+  color: #FFFFFF;
+}
+/* STYLES for the footer */
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+}
+
+.footer-logo, .footer-socialmedia, .footer-copyright {
+flex: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.footer-logo {
+justify-content: flex-start;
+}
+
+.footer-socialmedia {
+justify-content: center;
+}
+
+.footer-copyright {
+justify-content: flex-end;
+flex-direction: column;
+text-align: right;
+}
+}
